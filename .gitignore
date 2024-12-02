@@ -23,8 +23,13 @@ xcuserdata/
 ### Xcode Patch ###
 **/xcshareddata/WorkspaceSettings.xcsettings
 
+## Pods
+Podfile.lock
+/Pods
+
 .DS_Store
 
 # End of https://www.gitignore.io/api/xcode
 
 .idea
+ios.xcworkspace
