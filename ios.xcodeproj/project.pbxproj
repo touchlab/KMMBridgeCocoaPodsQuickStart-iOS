@@ -17,6 +17,8 @@
 		63ACC6C92AAE3D8E00965310 /* iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACC6C82AAE3D8E00965310 /* iosUITestsLaunchTests.swift */; };
 		63ACC6D72AAE3DDB00965310 /* BreedListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACC6D52AAE3DDB00965310 /* BreedListScreen.swift */; };
 		63ACC6D82AAE3DDB00965310 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ACC6D62AAE3DDB00965310 /* BreedViewModel.swift */; };
+		F1F15D0B2CFFA2BE00745871 /* allshared.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F15D0A2CFFA2BE00745871 /* allshared.xcframework */; };
+		F1F15D0C2CFFA2BE00745871 /* allshared.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1F15D0A2CFFA2BE00745871 /* allshared.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FADBC3D5431AC92D80695D0F /* Pods_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7071135ABF986FA8EABEB3E6 /* Pods_iosTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,20 @@
 			remoteInfo = ios;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1F15D0D2CFFA2BE00745871 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1F15D0C2CFFA2BE00745871 /* allshared.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E7A461AC1D4DEC5E741B185 /* Pods-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-iosTests/Pods-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +75,7 @@
 		B66559F27ACA6458326B5FF4 /* Pods-ios-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-ios-iosUITests/Pods-ios-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BD96A8A1B83C0F2A0B77CB66 /* Pods_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF22C64B812D5D3DAFD77472 /* Pods-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios.debug.xcconfig"; path = "Target Support Files/Pods-ios/Pods-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		F1F15D0A2CFFA2BE00745871 /* allshared.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = allshared.xcframework; path = Pods/allshared/allshared.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F15D0B2CFFA2BE00745871 /* allshared.xcframework in Frameworks */,
 				437F9FED1E7F10303B51335E /* Pods_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,13 +177,13 @@
 				0E7A461AC1D4DEC5E741B185 /* Pods-iosTests.debug.xcconfig */,
 				2B156EE0173B848DEAFFD9D7 /* Pods-iosTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		F52519F1A049E8294303ECFE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1F15D0A2CFFA2BE00745871 /* allshared.xcframework */,
 				BD96A8A1B83C0F2A0B77CB66 /* Pods_ios.framework */,
 				1525964B8F2226EC388D24D4 /* Pods_ios_iosUITests.framework */,
 				7071135ABF986FA8EABEB3E6 /* Pods_iosTests.framework */,
@@ -184,6 +202,7 @@
 				63ACC6A32AAE3D8D00965310 /* Sources */,
 				63ACC6A42AAE3D8D00965310 /* Frameworks */,
 				63ACC6A52AAE3D8D00965310 /* Resources */,
+				F1F15D0D2CFFA2BE00745871 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
