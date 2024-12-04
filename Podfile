@@ -1,6 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 
-platform :ios, '13.5'
+platform :ios, '16'
 
 source 'https://github.com/touchlab/KMMBridgeCocoaTest-releases.git'
 
