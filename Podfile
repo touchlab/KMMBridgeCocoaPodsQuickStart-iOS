@@ -12,7 +12,7 @@ target 'ios' do
   if ENV.include?("LOCAL_KOTLIN_PATH")
     pod 'allshared', :path => ENV["LOCAL_KOTLIN_PATH"]
   else
-    pod 'allshared', '0.2.7'
+    pod 'allshared', '0.1.0'
   end
 
   target 'iosTests' do
